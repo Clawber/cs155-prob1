@@ -54,9 +54,7 @@ end                                 {printf("<%s, T_end >\n", yytext);}
 (,)                                 {printf("<%s, T_comma >\n", yytext);}
 [eπ]                                {printf("<%s, T_math_constant >\n", yytext);}
 [a-zA-Z_][0-9a-zA-Z_]*              {printf("<%s, T_var >\n", yytext);}
-[-+]?[0-9]*\.?[0-9]+                {printf("<%s, T_float >\n", yytext);}
-(\/\/[ a-zA-Z0-9_ ]*$)              {printf("<%s, T_comment >\n", yytext);}
-\n                                  {printf("<%s, T_newline >\n", yytext);}
+
 
 %%
 
