@@ -30,6 +30,7 @@ STRING      \"{printable}*\"|\'{printable}*\'
 {STRING}                          { ret_print("T_string"); }
 "//".*                              /*consume comments */
 [+-]?[1-9]{digit}*|0                { ret_print("T_int"); }
+[+-]?([0-9]*[.])?[0-9]+             { ret_print("T_float"); }
 (<-)                                { ret_print("T_gets"); }
 (\+)|(-)|(\*)|(\/)|(\^)             { ret_print("T_arithOp"); }
 (=)                                 { ret_print("T_assign"); }
