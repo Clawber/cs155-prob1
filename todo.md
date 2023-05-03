@@ -8,6 +8,13 @@
 
 [x] copy paste the regex codes
 [x] print tokens  
+
+[ ] makefile
+  can execute these commands:
+    lex easy.l
+    gcc lex.yy.c
+  
+
 [ ] check uvle sampel
 [ ] README.md finalize
 [ ] else if handlint (tokens with spaces)
