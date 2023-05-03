@@ -32,8 +32,9 @@ STRING      \"{printable}*\"|\'{printable}*\'
 [+-]?[1-9]{digit}*|0                { ret_print("T_int"); }
 (<-)                                { ret_print("T_gets"); }
 (\+)|(-)|(\*)|(\/)|(\^)             { ret_print("T_arithOp"); }
+(=)                                 { ret_print("T_assign"); }
 (and)|(or)|(not)                    { ret_print("T_logOp"); }
-(<)|(≤)|(=)|$|(≠)|(>)|(≥)           { ret_print("T_relOp"); }
+(<)|(<=)|(==)|(:=)|$|(≠)|(>)|(>=)|(!=)     { ret_print("T_relOp"); }
 (floor)|(ceiling)|(mod)|(log_)      { ret_print("T_misc_math"); }
 (go\ to)                            { ret_print("T_goto"); }
 exit                                { ret_print("T_exit"); }
@@ -80,7 +81,7 @@ end                                 { ret_print("T_end"); }
 /*** Code Section prints the number of
 capital letter present in the given input***/
 void ret_print(char *token_type){
-    printf("< %s\t %s >\n", yytext, token_type);
+    printf("<%s,%s>\n", yytext, token_type);
 }
 
 //int yywrap(){}

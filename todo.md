@@ -1,9 +1,10 @@
 ### Current
-[ ] handle strings
-[ ] git merge + push
 
 
+[ ] ensure all test cases
+  [ ] floats
 
+[x] README.md finalize
 
 
 ### Done
@@ -30,29 +31,32 @@
     or are we supposed to consume ??? -> consume
 
 
-float misssing
-
-
+[x] handle strings
+[x] git merge + push
 [x] check uvle sample
+[x] else if handle int (tokens with     spaces) and float
+[x] token classes examples (c)
 
 
 ### Backburner
 
-[ ] README.md finalize
-[ ] else if handle int (tokens with spaces) and float
 
 
 [ ] (after finishing) pass github link
 [ ] lex definitions
-[ ] token classes examples (c)
 
+
+#### Bonus tasks
+[ ] parenthesis to brackets (unified tokens)
 
 
 removed rules:
   [a-zA-Z][0-9a-zA-Z_]*\(             {printf("<%s, T_function >\n", yytext);}
 
-### compiling
-lex easy.l
+
+
+### compiling instructions
+lex easy.lex
 gcc lex.yy.c
 
 
