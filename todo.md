@@ -1,3 +1,13 @@
+### Current
+[ ] handle strings
+[ ] git merge + push
+
+
+
+
+
+### Done
+
 [x] test cases copy 
 
 [x] flex tutorial 
@@ -16,13 +26,20 @@
   
 [x] solved function not defined thing
 
-[ ] printing whiteline (prints enter insteead of "\n")
-    or are we supposed to consume ???
+[x] printing whiteline (prints enter insteead of "\n")
+    or are we supposed to consume ??? -> consume
 
 
-[ ] check uvle sample
+float misssing
+
+
+[x] check uvle sample
+
+
+### Backburner
+
 [ ] README.md finalize
-[ ] else if handlint (tokens with spaces)
+[ ] else if handle int (tokens with spaces) and float
 
 
 [ ] (after finishing) pass github link
